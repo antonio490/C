@@ -2,12 +2,8 @@ cmake_minimum_required(VERSION 3.0.0)
 
 project(Calculadora VERSION 1.0.0)
 
-add_library(my_math
-suma.cpp
-division.cpp)
-
-add_library(my_print
-resultado.cpp)
+add_subdirectory(my_math_dir)
+add_subdirectory(my_print_dir)
 
 add_executable(calculadora
 main.cpp)
