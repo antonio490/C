@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/division.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/main.cpp
+iostream
+-
+suma.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/suma.h
+division.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/division.h
+resultado.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/resultado.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/resultado.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/suma.h
+

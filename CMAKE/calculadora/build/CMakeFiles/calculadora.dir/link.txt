@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/calculadora.dir/main.cpp.o -o calculadora  my_math_dir/libmy_math.a my_print_dir/libmy_print.a 
