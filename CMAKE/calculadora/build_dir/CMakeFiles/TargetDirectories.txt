@@ -1,0 +1,5 @@
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles/calculadora.dir
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles/edit_cache.dir
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles/my_math.dir
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles/rebuild_cache.dir
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles/my_print.dir

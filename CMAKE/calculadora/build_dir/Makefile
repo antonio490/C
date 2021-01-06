@@ -67,24 +67,13 @@ RM = /snap/cmake/743/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/antonio/Escritorio/repositorios/C/calc_cmake
+CMAKE_SOURCE_DIR = /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir
+CMAKE_BINARY_DIR = /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/743/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -97,11 +86,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/cmake/743/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir/CMakeFiles /home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build_dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,13 +142,39 @@ calculadora/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/build
 .PHONY : calculadora/fast
 
+#=============================================================================
+# Target rules for targets named my_math
+
+# Build rule for target.
+my_math: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math
+.PHONY : my_math
+
+# fast build rule for target.
+my_math/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/build
+.PHONY : my_math/fast
+
+#=============================================================================
+# Target rules for targets named my_print
+
+# Build rule for target.
+my_print: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_print
+.PHONY : my_print
+
+# fast build rule for target.
+my_print/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_print.dir/build.make CMakeFiles/my_print.dir/build
+.PHONY : my_print/fast
+
 division.o: division.cpp.o
 
 .PHONY : division.o
 
 # target to build an object file
 division.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/division.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/division.cpp.o
 .PHONY : division.cpp.o
 
 division.i: division.cpp.i
@@ -157,7 +183,7 @@ division.i: division.cpp.i
 
 # target to preprocess a source file
 division.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/division.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/division.cpp.i
 .PHONY : division.cpp.i
 
 division.s: division.cpp.s
@@ -166,7 +192,7 @@ division.s: division.cpp.s
 
 # target to generate assembly for a file
 division.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/division.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/division.cpp.s
 .PHONY : division.cpp.s
 
 main.o: main.cpp.o
@@ -202,7 +228,7 @@ resultado.o: resultado.cpp.o
 
 # target to build an object file
 resultado.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/resultado.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_print.dir/build.make CMakeFiles/my_print.dir/resultado.cpp.o
 .PHONY : resultado.cpp.o
 
 resultado.i: resultado.cpp.i
@@ -211,7 +237,7 @@ resultado.i: resultado.cpp.i
 
 # target to preprocess a source file
 resultado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/resultado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_print.dir/build.make CMakeFiles/my_print.dir/resultado.cpp.i
 .PHONY : resultado.cpp.i
 
 resultado.s: resultado.cpp.s
@@ -220,7 +246,7 @@ resultado.s: resultado.cpp.s
 
 # target to generate assembly for a file
 resultado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/resultado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_print.dir/build.make CMakeFiles/my_print.dir/resultado.cpp.s
 .PHONY : resultado.cpp.s
 
 suma.o: suma.cpp.o
@@ -229,7 +255,7 @@ suma.o: suma.cpp.o
 
 # target to build an object file
 suma.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/suma.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/suma.cpp.o
 .PHONY : suma.cpp.o
 
 suma.i: suma.cpp.i
@@ -238,7 +264,7 @@ suma.i: suma.cpp.i
 
 # target to preprocess a source file
 suma.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/suma.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/suma.cpp.i
 .PHONY : suma.cpp.i
 
 suma.s: suma.cpp.s
@@ -247,7 +273,7 @@ suma.s: suma.cpp.s
 
 # target to generate assembly for a file
 suma.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/suma.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_math.dir/build.make CMakeFiles/my_math.dir/suma.cpp.s
 .PHONY : suma.cpp.s
 
 # Help Target
@@ -259,6 +285,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... calculadora"
+	@echo "... my_math"
+	@echo "... my_print"
 	@echo "... division.o"
 	@echo "... division.i"
 	@echo "... division.s"

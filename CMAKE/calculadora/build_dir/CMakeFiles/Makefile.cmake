@@ -44,4 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/calculadora.dir/DependInfo.cmake"
+  "CMakeFiles/my_math.dir/DependInfo.cmake"
+  "CMakeFiles/my_print.dir/DependInfo.cmake"
   )

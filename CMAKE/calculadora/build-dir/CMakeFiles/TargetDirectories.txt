@@ -1,3 +1,0 @@
-/home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir/CMakeFiles/rebuild_cache.dir
-/home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir/CMakeFiles/calculadora.dir
-/home/antonio/Escritorio/repositorios/C/calc_cmake/build-dir/CMakeFiles/edit_cache.dir
