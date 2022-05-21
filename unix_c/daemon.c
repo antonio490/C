@@ -6,7 +6,8 @@
 #include <syslog.h>
 
 
-void daemin_init( const char *program, int facility ){
+void daemin_init( const char *program, int facility )
+{
 
     pid_t pid;
     int i, sigs[] = { SIGHUP, SIGINT, SIGQUIT, SIGTSTP, SIGTTIN, SIGTTOU };
@@ -35,12 +36,55 @@ void daemin_init( const char *program, int facility ){
             exit( EXIT_FAILURE );
             break;
 
-        case 0: /* Child process ccontinues running */
+        case 0: /* Child process continues running */
             openlog( program, LOG_PID, facility );
             break;
 
         default: /* Parent process ends */
             exit( EXIT_SUCCESS );
             break;
+    }
+
+    /* 3. Break link with terminal */
+
+    if( setsid() < 0 )
+    {
+        syslog( LOG_ERR, "Failure in setsid(): %s.\n", strerror( errno ) );
+        exit( EXIT_FAILURE );
+    }
+
+    switch ( pid = fork() )
+    {
+    case -1: /* Fail */
+        syslog( LOG_ERR, "Failure in fork(): %s.\n", strerror( errno ) );
+        exit( EXIT_FAILURE );
+        break;
+    
+    case 0: /* Child process continues running */
+        break;
+    
+    default: /* Parent process ends */
+        exit( EXIT_SUCCESS );
+        break;
+    }
+
+    /* 4. Close unneccesary fds */
+    
+    close( STDIN_FILENO );
+    close( STDOUT_FILENO );
+    close( STDERR_FILENO );
+
+    /* 5. Change working directory */
+
+    chdir( "/" );
+
+    /* 6. Reset file mode mask */
+
+    umask( 0 );
+
+    int main( int argc, char *argv[] )
+    {
+        daemin_init( argv[0], LOG_DAEMON );
+        sleep( 60 ); 
     }
 }
