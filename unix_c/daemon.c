@@ -1,3 +1,14 @@
+/***********************************************/
+/* Author:     Markus Zahn
+ *
+ * Title:      Unix-Netzwerkprogrammierung
+ *             mit Threads, Sockets und SSL
+ *
+ * Editorial:  Springer
+ *
+/***********************************************/
+
+
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
