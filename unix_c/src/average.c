@@ -68,6 +68,7 @@ int main(int argc, char *arg[] )
 
         printf( "input> " );
         fgets( input, sizeof( input ), stdin );
+        printf("\n");
 
         /* save value in buffer */
 

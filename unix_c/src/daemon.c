@@ -17,7 +17,7 @@
 #include <syslog.h>
 
 
-void daemin_init( const char *program, int facility )
+void daemon_init( const char *program, int facility )
 {
 
     pid_t pid;
@@ -26,7 +26,7 @@ void daemin_init( const char *program, int facility )
 
     /* 1. Ignore signals and create an own terminal */
 
-    action.__sigaction_handler = SIG_IGN;
+    action.sa_handler = SIG_IGN;
     sigemptyset( &action.sa_mask );
     action.sa_flags = 0;
 
@@ -92,10 +92,11 @@ void daemin_init( const char *program, int facility )
     /* 6. Reset file mode mask */
 
     umask( 0 );
+}
 
-    int main( int argc, char *argv[] )
-    {
-        daemin_init( argv[0], LOG_DAEMON );
-        sleep( 60 ); 
-    }
+
+int main( int argc, char *argv[] )
+{
+    daemon_init( argv[0], LOG_DAEMON );
+    sleep( 60 ); 
 }
