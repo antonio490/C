@@ -35,7 +35,7 @@ void *avg( void *arg )
 
             num++;
 
-            printf( "Average from %d is: %lf\n ", num, (double)sum / sum ); 
+            printf( "Average from %d is: %lf\n ", num, (double)sum / num ); 
         }
     }
 
