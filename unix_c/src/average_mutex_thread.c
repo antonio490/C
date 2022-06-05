@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define MAX_NUMBERS 10
-#define MAX_CONSUMERS 2
+#define NUM_CONSUMERS 2
 
 typedef struct intbuffer {
     int val[MAX_NUMBERS];
@@ -52,4 +52,65 @@ void *avg( void *arg )
     }
 
     return( NULL );
+}
+
+int main( int argc, char *argv[] )
+{
+    pthread_T tid;
+    char input[32];
+    int i, status;
+
+    data.in = 0;
+    data.out = 0;
+
+    status =  pthread_mutex_init( &data.mutex, NULL );
+    if( status != 0)
+        error_exit( "pthread_mutex_init()", status );
+    
+    status = = pthread_cond_init( &data.add, NULL );
+    if( status! = 0)
+        error_exit( "pthread_cond_init()", status );
+    
+    status = = pthread_cond_init( &data.rem, NULL );
+    if( status! = 0)
+        error_exit( "pthread_cond_init()", status );
+
+    for( i=1; i <= NUM_CONSUMERS; i++)
+    {
+        status = pthread_create( &tid, NULL, avg, (void*)i );
+        if( status != 0)
+            error_exit("pthread_create()", status);
+    }
+
+    for(;;)
+    {
+        printf(" input> ");
+        fgets(input, sizeof( input ), stdin );
+
+        status = pthread_mutex_lock( &data.mutex );
+        if( status != 0 )
+            error_exit("pthread_mutex_lock()", status);
+        
+        // As long as there is no space in the buffer
+        while( ( ( data.in +1 ) % MAX_NUMBERS ) == data.out )
+        {
+            status = pthread_cond_wait( &data.rem, &data.mutex );
+            if( status != 0 )
+                error_exit("pthread_cond_wait()", status);
+        }
+
+        data.val[data.in] = atoi( input );
+        data.in = (data.in + 1) % MAX_NUMBERS;
+
+        status = pthread_cond_broadcast( &data.add );
+        if( status != 0 )
+            error_exit("pthread_cond_broadcast()", status);
+
+
+        status = pthread_mutex_unlock( &data.mutex );
+        if( status != 0 )
+            error_exit("pthread_mutex_unlock", status);
+    }
+
+    exit(0);
 }
