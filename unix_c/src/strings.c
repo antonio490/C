@@ -5,7 +5,7 @@
 
 #define LEN_256  256
 
-int leng(char *pstr)
+int leng( char *pstr )
 {
     int i = 0, length = 0;
 
@@ -17,7 +17,7 @@ int leng(char *pstr)
     return length;
 }
 
-char *reverse_str(char *str)
+char *reverse_str( char *str )
 {
     int  length = 0, i = 0, j = 0, midleng;
     char temp;
@@ -34,6 +34,21 @@ char *reverse_str(char *str)
         j = j - 1;
     }
     return str;
+}
+
+char *concat( char *str1, char *str2 )
+{
+     int length = 0, length_2 = 0, i = 0, j = 0;
+
+
+     length   = leng(str1);
+     length_2 = leng(str2);
+     for( i = length; str2[j] != '\0'; i++, j++)
+     {
+         str1[i] = str2[j];
+     }
+     str1[i] = '\0';
+     return str1;
 }
 
 int main( int argc, char* argv[] )
