@@ -6,17 +6,18 @@
 
 void main()
 {
-    int temp_array[WINDOW_SIZE] = {0};
-    int index = 0, len = 0, num;
+    float temp_array[WINDOW_SIZE] = {0};
+    int index = 0, len = 0;
+    float num, sum;
 
     while(1)
     {
-        printf("Enter temperature integer: ");
-        scanf("%d", &num);
+        printf("Enter temperature value: ");
+        scanf("%f", &num);
         temp_array[index] = num;
         index++;
         len++;
-        int sum=0;
+        sum = 0;
 
         if(index >= WINDOW_SIZE) index = 0;
         if(len >= WINDOW_SIZE) len = WINDOW_SIZE;
@@ -25,8 +26,8 @@ void main()
             sum += temp_array[i];
         }
 
-        printf("\tSum: %d\t Length: %d\n", sum, len);
-        printf("\tAverage: %d\n", sum / len);
+        printf("\tSum: %.2f\t Length: %d\n", sum, len);
+        printf("\tAverage: %.2f\n", sum / len);
     }
 
 }
