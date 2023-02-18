@@ -1,1 +1,0 @@
-float suma(float,float);

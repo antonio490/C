@@ -144,59 +144,59 @@ my_math/fast:
 	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/build
 .PHONY : my_math/fast
 
-division.o: division.cpp.o
+src/division.o: src/division.cpp.o
 
-.PHONY : division.o
-
-# target to build an object file
-division.cpp.o:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/division.cpp.o
-.PHONY : division.cpp.o
-
-division.i: division.cpp.i
-
-.PHONY : division.i
-
-# target to preprocess a source file
-division.cpp.i:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/division.cpp.i
-.PHONY : division.cpp.i
-
-division.s: division.cpp.s
-
-.PHONY : division.s
-
-# target to generate assembly for a file
-division.cpp.s:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/division.cpp.s
-.PHONY : division.cpp.s
-
-suma.o: suma.cpp.o
-
-.PHONY : suma.o
+.PHONY : src/division.o
 
 # target to build an object file
-suma.cpp.o:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/suma.cpp.o
-.PHONY : suma.cpp.o
+src/division.cpp.o:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.o
+.PHONY : src/division.cpp.o
 
-suma.i: suma.cpp.i
+src/division.i: src/division.cpp.i
 
-.PHONY : suma.i
+.PHONY : src/division.i
 
 # target to preprocess a source file
-suma.cpp.i:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/suma.cpp.i
-.PHONY : suma.cpp.i
+src/division.cpp.i:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.i
+.PHONY : src/division.cpp.i
 
-suma.s: suma.cpp.s
+src/division.s: src/division.cpp.s
 
-.PHONY : suma.s
+.PHONY : src/division.s
 
 # target to generate assembly for a file
-suma.cpp.s:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/suma.cpp.s
-.PHONY : suma.cpp.s
+src/division.cpp.s:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.s
+.PHONY : src/division.cpp.s
+
+src/suma.o: src/suma.cpp.o
+
+.PHONY : src/suma.o
+
+# target to build an object file
+src/suma.cpp.o:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.o
+.PHONY : src/suma.cpp.o
+
+src/suma.i: src/suma.cpp.i
+
+.PHONY : src/suma.i
+
+# target to preprocess a source file
+src/suma.cpp.i:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.i
+.PHONY : src/suma.cpp.i
+
+src/suma.s: src/suma.cpp.s
+
+.PHONY : src/suma.s
+
+# target to generate assembly for a file
+src/suma.cpp.s:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_math_dir/CMakeFiles/my_math.dir/build.make my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.s
+.PHONY : src/suma.cpp.s
 
 # Help Target
 help:
@@ -207,12 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_math"
-	@echo "... division.o"
-	@echo "... division.i"
-	@echo "... division.s"
-	@echo "... suma.o"
-	@echo "... suma.i"
-	@echo "... suma.s"
+	@echo "... src/division.o"
+	@echo "... src/division.i"
+	@echo "... src/division.s"
+	@echo "... src/suma.o"
+	@echo "... src/suma.i"
+	@echo "... src/suma.s"
 .PHONY : help
 
 

@@ -131,8 +131,8 @@ my_print_dir/clean: my_print_dir/CMakeFiles/my_print.dir/clean
 # Target rules for target CMakeFiles/calculadora.dir
 
 # All Build rule for target.
-CMakeFiles/calculadora.dir/all: my_math_dir/CMakeFiles/my_math.dir/all
 CMakeFiles/calculadora.dir/all: my_print_dir/CMakeFiles/my_print.dir/all
+CMakeFiles/calculadora.dir/all: my_math_dir/CMakeFiles/my_math.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=1,2 "Built target calculadora"

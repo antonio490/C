@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_math.dir/division.cpp.o"
-  "CMakeFiles/my_math.dir/suma.cpp.o"
+  "CMakeFiles/my_math.dir/src/division.cpp.o"
+  "CMakeFiles/my_math.dir/src/suma.cpp.o"
   "libmy_math.a"
   "libmy_math.pdb"
 )

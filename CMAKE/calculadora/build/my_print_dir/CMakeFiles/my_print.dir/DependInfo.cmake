@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/resultado.cpp" "/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_print_dir/CMakeFiles/my_print.dir/resultado.cpp.o"
+  "/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/src/resultado.cpp" "/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_print_dir/CMakeFiles/my_print.dir/src/resultado.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../my_print_dir/include"
   )
 
 # Targets to which this target links.

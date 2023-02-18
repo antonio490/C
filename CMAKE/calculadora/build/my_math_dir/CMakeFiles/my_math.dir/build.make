@@ -76,42 +76,42 @@ include my_math_dir/CMakeFiles/my_math.dir/progress.make
 # Include the compile flags for this target's objects.
 include my_math_dir/CMakeFiles/my_math.dir/flags.make
 
-my_math_dir/CMakeFiles/my_math.dir/suma.cpp.o: my_math_dir/CMakeFiles/my_math.dir/flags.make
-my_math_dir/CMakeFiles/my_math.dir/suma.cpp.o: ../my_math_dir/suma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_math_dir/CMakeFiles/my_math.dir/suma.cpp.o"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_math.dir/suma.cpp.o -c /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/suma.cpp
+my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.o: my_math_dir/CMakeFiles/my_math.dir/flags.make
+my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.o: ../my_math_dir/src/suma.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.o"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_math.dir/src/suma.cpp.o -c /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/suma.cpp
 
-my_math_dir/CMakeFiles/my_math.dir/suma.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/suma.cpp.i"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/suma.cpp > CMakeFiles/my_math.dir/suma.cpp.i
+my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/src/suma.cpp.i"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/suma.cpp > CMakeFiles/my_math.dir/src/suma.cpp.i
 
-my_math_dir/CMakeFiles/my_math.dir/suma.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/suma.cpp.s"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/suma.cpp -o CMakeFiles/my_math.dir/suma.cpp.s
+my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/src/suma.cpp.s"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/suma.cpp -o CMakeFiles/my_math.dir/src/suma.cpp.s
 
-my_math_dir/CMakeFiles/my_math.dir/division.cpp.o: my_math_dir/CMakeFiles/my_math.dir/flags.make
-my_math_dir/CMakeFiles/my_math.dir/division.cpp.o: ../my_math_dir/division.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_math_dir/CMakeFiles/my_math.dir/division.cpp.o"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_math.dir/division.cpp.o -c /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/division.cpp
+my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.o: my_math_dir/CMakeFiles/my_math.dir/flags.make
+my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.o: ../my_math_dir/src/division.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.o"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_math.dir/src/division.cpp.o -c /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/division.cpp
 
-my_math_dir/CMakeFiles/my_math.dir/division.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/division.cpp.i"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/division.cpp > CMakeFiles/my_math.dir/division.cpp.i
+my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/src/division.cpp.i"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/division.cpp > CMakeFiles/my_math.dir/src/division.cpp.i
 
-my_math_dir/CMakeFiles/my_math.dir/division.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/division.cpp.s"
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/division.cpp -o CMakeFiles/my_math.dir/division.cpp.s
+my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/src/division.cpp.s"
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/my_math_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/division.cpp -o CMakeFiles/my_math.dir/src/division.cpp.s
 
 # Object files for target my_math
 my_math_OBJECTS = \
-"CMakeFiles/my_math.dir/suma.cpp.o" \
-"CMakeFiles/my_math.dir/division.cpp.o"
+"CMakeFiles/my_math.dir/src/suma.cpp.o" \
+"CMakeFiles/my_math.dir/src/division.cpp.o"
 
 # External object files for target my_math
 my_math_EXTERNAL_OBJECTS =
 
-my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/suma.cpp.o
-my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/division.cpp.o
+my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/src/suma.cpp.o
+my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/src/division.cpp.o
 my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/build.make
 my_math_dir/libmy_math.a: my_math_dir/CMakeFiles/my_math.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmy_math.a"

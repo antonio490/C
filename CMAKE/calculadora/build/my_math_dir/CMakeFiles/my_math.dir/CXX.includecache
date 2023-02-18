@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/division.cpp
+../my_math_dir/include/division.h
 
-/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/suma.cpp
+../my_math_dir/include/suma.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/division.cpp
+division.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/division.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/suma.cpp
+suma.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/src/suma.h
 

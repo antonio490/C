@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_math_dir/include -I/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/include
 
 CXX_FLAGS = 
 

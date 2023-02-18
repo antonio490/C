@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/resultado.cpp
+../my_print_dir/include/resultado.h
+
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/src/resultado.cpp
 iostream
 -
+resultado.h
+/home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/my_print_dir/src/resultado.h
 

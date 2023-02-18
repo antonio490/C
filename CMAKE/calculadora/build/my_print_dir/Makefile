@@ -144,32 +144,32 @@ my_print/fast:
 	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/build
 .PHONY : my_print/fast
 
-resultado.o: resultado.cpp.o
+src/resultado.o: src/resultado.cpp.o
 
-.PHONY : resultado.o
+.PHONY : src/resultado.o
 
 # target to build an object file
-resultado.cpp.o:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/resultado.cpp.o
-.PHONY : resultado.cpp.o
+src/resultado.cpp.o:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/src/resultado.cpp.o
+.PHONY : src/resultado.cpp.o
 
-resultado.i: resultado.cpp.i
+src/resultado.i: src/resultado.cpp.i
 
-.PHONY : resultado.i
+.PHONY : src/resultado.i
 
 # target to preprocess a source file
-resultado.cpp.i:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/resultado.cpp.i
-.PHONY : resultado.cpp.i
+src/resultado.cpp.i:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/src/resultado.cpp.i
+.PHONY : src/resultado.cpp.i
 
-resultado.s: resultado.cpp.s
+src/resultado.s: src/resultado.cpp.s
 
-.PHONY : resultado.s
+.PHONY : src/resultado.s
 
 # target to generate assembly for a file
-resultado.cpp.s:
-	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/resultado.cpp.s
-.PHONY : resultado.cpp.s
+src/resultado.cpp.s:
+	cd /home/antonio/Escritorio/repositorios/C/CMAKE/calculadora/build && $(MAKE) $(MAKESILENT) -f my_print_dir/CMakeFiles/my_print.dir/build.make my_print_dir/CMakeFiles/my_print.dir/src/resultado.cpp.s
+.PHONY : src/resultado.cpp.s
 
 # Help Target
 help:
@@ -180,9 +180,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_print"
-	@echo "... resultado.o"
-	@echo "... resultado.i"
-	@echo "... resultado.s"
+	@echo "... src/resultado.o"
+	@echo "... src/resultado.i"
+	@echo "... src/resultado.s"
 .PHONY : help
 
 

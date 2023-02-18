@@ -28,3 +28,14 @@ void sigcatcher( void )
 
     return;
 }
+
+void *worker( void *arg )
+{
+    int client = (int)arg; /* Socketdeskriptor ermitteln */
+
+    handle_client( client ); /* Clientverbindung behandlen */
+
+    /* Socketdeskriptor schließen und Thread beenden */
+    close( client );
+    return( NULL );
+}
