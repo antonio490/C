@@ -85,3 +85,37 @@ void *accept_handler( void *arg )
 
     return; /* Wird nie erreicht... */
 }
+
+int main( int argc, char *argv[] )
+{
+    int sd, status;
+    sigset_t sigset;
+    pthread_t tid;
+
+    /* horchenden Socket öffnen (passive open) */
+    if( ( sd =tcp_listen( NULL, SRVPORT, BACKLOG ) ) < 0 )
+        exit( EXIT_FAILURE );
+
+    /* Signalmaske initialisieren */
+    sigemptyset( &sigset );
+    sigaddset( &sigset, SIGTERM );
+
+    /* Signalmaske für den main()-Thread setzten */
+    status = phtread_sigmask( SIG_BLOCK, &sigset, NULL );
+    
+    if( status != 0)
+    {
+        fprintf( stderr, "pthread_sigmask() failed: %s\n", strerror( status ) );
+        close( sd ); /* passiven Socket schließen */
+        exit( EXIT_FAILURE );
+    }
+
+    /* Prozeß in einen Daemon umwandeln */
+    daemon_init( argv[0], PIDFILE, LOG_DAEMON );
+
+    init_srv_status(); /* CPU statistik initialisieren */
+
+    
+
+
+}
