@@ -115,7 +115,23 @@ int main( int argc, char *argv[] )
 
     init_srv_status(); /* CPU statistik initialisieren */
 
-    
+    /* Accept-Handler starten */
+    status = pthread_create( &tid, NULL, accept_handler, (void *)sd );
 
+    if( status != 0 )
+    {
+        syslog( LOG_ERR, "pthread_create()", strerror( status ) );
+        exit( EXIT_FAILURE );
+    }
+
+    pthread_detach( tid );
+
+    sigcatcher(); /* Der Hauptthread behandelt die Signale */
+
+    /* Falls der Prozeß durch SIGTERM beendet wird */
+    print_srv_stats(); /* CPU-Statistik asugeben */
+
+    unlink( PIDFILE ); /* PID-Datei entfernen */
+    exit( EXIT_SUCCESS ); /* Daemon beenden */
 
 }
