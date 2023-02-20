@@ -75,8 +75,8 @@ void daemon_init( const char *program, int facility )
     umask( 0 );
 }
 
-int main( int argc, char *argv[] )
-{
-    daemon_init( argv[0], LOG_DAEMON );
-    sleep(60);
-}
+// int main( int argc, char *argv[] )
+// {
+//     daemon_init( argv[0], LOG_DAEMON );
+//     sleep(60);
+// }

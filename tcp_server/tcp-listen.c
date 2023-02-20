@@ -30,7 +30,7 @@ int tcp_listen( const char *nodename, const char *servname, int backlog )
             setsockopt( sd, SOL_SOCKET, SO_REUSEADDR, &reuseaddr, sizeof( int ) );
 
             /* Socket an Socket-Adresse binden und ... */
-            if( bind( sd, aptr->ai_addr, aptr->ad_addrlen ) == 0 )
+            if( bind( sd, aptr->ai_addr, aptr->ai_addrlen ) == 0 )
                 /* aktiven Socket in passiven Socket umwandeln */
                 if( listen( sd, backlog ) >= 0 )
                     /* Wenn alles geklappt hat: Schleife beenden */
